@@ -91,6 +91,9 @@
       arrow.style.transform = `rotate(${data.coords.heading}deg)`;
 
     
+    } , (err) => {
+      console.error(err);
+      alert("Please have your location turn on ");
     });
     </script>
 </body>
