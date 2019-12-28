@@ -22,6 +22,9 @@ if (e.results[0].isFinal) {
   p = document.createElement('p');
   words.appendChild(p);
 }
+if(transcript.includes('get the weather')) {
+  console.log('GETTING THE WEATHER');
+}
 
     console.log(transcript);
 
