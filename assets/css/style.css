@@ -3,7 +3,7 @@ html {
     text-align: center;
     margin: 20;
   padding: 50;
-  background: #ffc600;
+  /* background: #ffc600; */
 
 }
 
@@ -23,3 +23,10 @@ html {
     text-align: center;
     color: #ee0404;
 } 
+
+section {
+  background: #ffc600;
+  font-family: 'helvetica neue';
+  font-weight: 200;
+  font-size: 20px;
+}
