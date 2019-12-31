@@ -35,6 +35,10 @@
         //console.log(this);
         const linkCoords =this.getBoundingClientRect();
         console.log(linkCoords);
+        const coords = {
+            width: linkCoords.width,
+            height: linkCoords.height,
+        }
         highlight.style.width = `${linkCoords.width}px`;
         highlight.style.height = `${linkCoords.hight}px`;
         highlight.style.transform = `translate(${linkCoords.left}px, ${linkCoords.top}px)`;
