@@ -241,7 +241,11 @@
           background.classList.remove('open');
 
           const dropdown = this.querySelector('.dropdown');
-          console.log(dropdown);
+         // console.log(dropdown);
+         const dropdownCoords = dropdown.getBoundingClientRect();
+         const navCoords = nav.getBoundingClientRect();
+         //console.log(dropdownCoords);
+         console.log(navCoords);
 
       }
 
