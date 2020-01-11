@@ -140,7 +140,7 @@
     transition: all 0.5s;
     transform: translateY(100px);
     will-change: opacity;
-    /* display: none; */
+    display: none;
   }
 
   .trigger-enter .dropdown {
@@ -232,7 +232,8 @@
       function handleEnter() {
         //console.log('Enter!!');
         this.classList.add('trigger-enter');
-        setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
+        setTimeout(() => this.classList.contains('trigger-enter') && 
+        this.classList.add('trigger-enter-active'), 150);
     background.classList.add('open');
 
     //     setTimeout(() => {
@@ -272,6 +273,9 @@
 
       triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
       triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
+
+
+      
 </script>
 
 </body>
