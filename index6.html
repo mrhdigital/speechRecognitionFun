@@ -232,17 +232,16 @@
       function handleEnter() {
         //console.log('Enter!!');
         this.classList.add('trigger-enter');
-        setTimeout(() => {
-            if(this.classList.contains('trigger-enter')) {
-               this.classList.add('trigger-enter-active')
-        }
-      }, 150);
-        background.classList.add('open');
-      }
-      function handleLeave() {
-          //console.log('Leave!!');
-          this.classList.remove('trigger-enter', 'trigger-enter-active');
-          background.classList.remove('open');
+        setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
+    background.classList.add('open');
+
+    //     setTimeout(() => {
+    //         if(this.classList.contains('trigger-enter')) {
+    //            this.classList.add('trigger-enter-active')
+    //     }
+    //   }, 150);
+    //     background.classList.add('open');
+      
 
           const dropdown = this.querySelector('.dropdown');
          // console.log(dropdown);
@@ -263,6 +262,12 @@
 
 
 
+      }
+
+      function handleLeave() {
+          //console.log('Leave!!');
+          this.classList.remove('trigger-enter', 'trigger-enter-active');
+          background.classList.remove('open');
       }
 
       triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
