@@ -59,11 +59,16 @@
         slider.classList.remove('active');
         
     });
-    slider.addEventListener('mousemove', () =>  {
+    slider.addEventListener('mousemove', (e) =>  {
         if(!isDown) return; //stop the function from running
-        console.count(isDown);
+        //console.count(isDown);
        // console.log('Do Work!');
-       console.log(startX);
+      // console.log(startX);
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+     // console.log({x, startX});
+     const walk = x - startX;
+     console.log(walk);
         
     });
 
