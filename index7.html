@@ -46,7 +46,8 @@
         slider.classList.add('active');
        // console.log(e.pageX);
        startX = e.pageX - slider.offsetLeft;
-       console.log(startX);
+       scrollLeft = slider.scrollLeft;
+       //console.log(startX);
     });
     slider.addEventListener('mouseleave', () =>  {
         isDown = false;
@@ -61,7 +62,8 @@
     slider.addEventListener('mousemove', () =>  {
         if(!isDown) return; //stop the function from running
         console.count(isDown);
-        console.log('Do Work!');
+       // console.log('Do Work!');
+       console.log(startX);
         
     });
 
