@@ -19,7 +19,8 @@ function timer(seconds) {
 }
 
 function displayTimerLeft(seconds) {
-    const minutes = seconds / 60;
-    console.log({minutes});
+    const minutes = Math.floor(seconds / 60);
+    const remainderSeconds = seconds % 60;
+    console.log({minutes, remainderSeconds});
     console.log(seconds);
 }
