@@ -25,6 +25,7 @@ function displayTimerLeft(seconds) {
     const remainderSeconds = seconds % 60;
     //const display = `${minutes}:${remainderSeconds}`; // need to add extra zero
     const display = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${remainderSeconds}`;
+    document.title = display; // add time display to the title of the page
     timerDisplay.textContent = display;
     //console.log({minutes, remainderSeconds});
     //console.log(seconds);
