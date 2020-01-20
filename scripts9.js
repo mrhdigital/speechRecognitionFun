@@ -41,7 +41,8 @@ function displayEndTime(timestamp) {
      //new Date(1579536979471); // now it will convert to a proper timestamp 
      const end = new Date(timestamp);
      const hour = end.getHours();
+     const adjustedHour = hour > 12 ? hour - 12 : hour;
      const minutes = end.getMinutes();
-     endTime.textContent = `Be Back At ${hour}: ${minutes}`;
+     endTime.textContent = `Be Back At ${adjustedHour}:${minutes < 10 ? '0':''}${minutes}`;
           
 }
