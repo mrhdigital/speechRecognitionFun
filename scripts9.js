@@ -48,6 +48,8 @@ function displayEndTime(timestamp) {
           
 }
 function startTimer() {
-    console.log(this);
+    console.log(this); // display the element <button>
+    console.log(this.dataset); // display the object e.g {time: "20"}
+    console.log(this.dataset.time); // display the string of dataset e.g "20"
 }
 butttons.forEach(button => button.addEventListener('click', startTimer));
