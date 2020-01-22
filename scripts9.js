@@ -6,17 +6,20 @@ const butttons = document.querySelectorAll('[data-time]');
 
 
 function timer(seconds) {
+    // clear any existing timers
+    clearInterval(countdown);
+
     const now = Date.now();
     const then = now + seconds * 1000;
     displayTimerLeft(seconds); // immediately run this function only once
     displayEndTime(then);
     //console.log({now, then});
-    counstDown = setInterval(() => {
+    countdown = setInterval(() => {
         const secondsLeft = Math.round((then - Date.now()) / 1000);
 
         // check if we should stop it
         if(secondsLeft < 0) {
-            clearInterval(counstDown);
+            clearInterval(countdown);
             return; // return will not stop the function from running, it will not just display it
         }
         displayTimerLeft(secondsLeft);
@@ -46,7 +49,7 @@ function displayEndTime(timestamp) {
      const minutes = end.getMinutes();
      endTime.textContent = `Be Back At ${adjustedHour}:${minutes < 10 ? '0':''}${minutes}`;
           
-     timer(seconds)
+    // timer(seconds);
 }
 function startTimer() {
     console.log(this); // display the element <button>
