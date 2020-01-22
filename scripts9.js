@@ -46,10 +46,14 @@ function displayEndTime(timestamp) {
      const minutes = end.getMinutes();
      endTime.textContent = `Be Back At ${adjustedHour}:${minutes < 10 ? '0':''}${minutes}`;
           
+     timer(seconds)
 }
 function startTimer() {
     console.log(this); // display the element <button>
     console.log(this.dataset); // display the object e.g {time: "20"}
     console.log(this.dataset.time); // display the string of dataset e.g "20"
+    const seconds = parseInt(this.dataset.time);
+    console.log(seconds);
+    timer(seconds);
 }
 butttons.forEach(button => button.addEventListener('click', startTimer));
