@@ -62,4 +62,9 @@ function startTimer() {
 butttons.forEach(button => button.addEventListener('click', startTimer));
 document.customForm.addEventListener('submit', function(e){
    e.preventDefault();
+   const mins = this.minutes.value;
+   console.log(mins);
+   // pass mins to the funciton timer but first convert to seconds
+   timer(mins * 60);
+   this.reset();
 });
