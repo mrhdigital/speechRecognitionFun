@@ -60,3 +60,6 @@ function startTimer() {
     timer(seconds);
 }
 butttons.forEach(button => button.addEventListener('click', startTimer));
+document.customForm.addEventListener('submit', function(e){
+   e.preventDefault();
+});
