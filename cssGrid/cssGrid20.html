@@ -172,6 +172,7 @@
     gallery.innerHTML = html;
     //console.log(html);
     const items = document.querySelectorAll('.item');
+    items.forEach(item => item.addEventListener('click', handleClick));
 
 
   </script>
