@@ -70,6 +70,17 @@
       height: 100%;
       object-fit: cover;
     }
+    .item__overlay {
+      background: #ffc60032;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      position: relative;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      transition: 0.2s;
+      transform: translateY(100%);
+    }
 
     .item.v2 {
       grid-row: span 2;
