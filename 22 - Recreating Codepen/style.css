@@ -28,4 +28,12 @@ html {
     font-size: 1.5em;
   }
   
-  
+  .codepen {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr auto;
+    height: 100vh;
+    /* color: white; */
+  }
+.codepen >* {
+  border:1px solid black;
+}
