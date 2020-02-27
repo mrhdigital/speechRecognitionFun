@@ -75,3 +75,19 @@ html {
     font-size: 15px;
     position: relative;
   }
+
+  .button--small {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .button--dirty:before {
+    background: #ffc600;
+    display: block;
+    content: '';
+    height: 2px;
+    width: calc(100% - 6px);
+    position: absolute;
+    left: 3px;
+    top: 3px;
+  }
