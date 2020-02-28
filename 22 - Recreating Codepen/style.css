@@ -47,6 +47,12 @@ html {
     grid-template-columns: repeat(3, 1fr);
     background: #1b2b34;
   }
+
+  .editor {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+  
   .editor__header {
     display: grid;
     grid-template-columns: auto 1fr auto;
