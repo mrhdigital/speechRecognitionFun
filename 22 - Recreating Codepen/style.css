@@ -61,6 +61,12 @@ html {
     grid-gap: 5px;
     background: rgba(0,0,0,0.1);
   }
+
+  .editor__code {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+  
   /* Pen Header */
 
 .pen {
