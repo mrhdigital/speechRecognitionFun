@@ -47,7 +47,14 @@ html {
     grid-template-columns: repeat(3, 1fr);
     background: #1b2b34;
   }
-
+  .editor__header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 5px;
+    grid-gap: 5px;
+    background: rgba(0,0,0,0.1);
+  }
   /* Pen Header */
 
 .pen {
