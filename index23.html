@@ -15,7 +15,7 @@
   <div class="grid">
     <div class="item">1</div>
     <div class="item">2</div>
-    <div class="item">3</div>
+    <div class="item">Earth is cool!</div>
     <div class="item">4</div>
   </div>
 
@@ -26,7 +26,12 @@
       grid-gap: 20px;
       grid-template-columns: repeat(var(--cols, 12), minmax(0, 1fr));
     }
-    
+    .item {
+      min-width: 0;
+      width: 100%;
+      --span: 1;
+      grid-column: span var(--span);
+    }
   </style>
 
 </body>
