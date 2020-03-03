@@ -32,11 +32,19 @@ body {
     align-items: start;
     justify-content: center;
   }
-  
+
   .hero > * {
     background: var(--yellow);
     padding: 5px;
   }
+  .cta {
+    background: var(--yellow);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+  
 .top {
     grid-area: hero;
 }
