@@ -33,6 +33,10 @@ body {
     justify-content: center;
   }
   
+  .hero > * {
+    background: var(--yellow);
+    padding: 5px;
+  }
 .top {
     grid-area: hero;
 }
