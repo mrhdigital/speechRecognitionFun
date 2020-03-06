@@ -110,3 +110,12 @@ body {
   .feature p {
     color: rgba(0,0,0,0.5);
   }
+  /* About Section */
+
+.about {
+    background: white;
+    padding:50px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
+  }
