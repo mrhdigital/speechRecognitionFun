@@ -103,3 +103,10 @@ body {
     text-align: center;
     box-shadow: 0 0 4px  rgba(0,0,0,0.1);
   }
+
+  .feature .icon {
+    font-size: 50px;
+  }
+  .feature p {
+    color: rgba(0,0,0,0.5);
+  }
