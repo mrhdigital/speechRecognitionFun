@@ -174,3 +174,12 @@ body {
         "cta1 cta2"
     }
 }
+
+@media (max-width: 500px) {
+    .top {
+      grid-template-areas:
+        "hero"
+        "cta1"
+        "cta2"
+    }
+  }
