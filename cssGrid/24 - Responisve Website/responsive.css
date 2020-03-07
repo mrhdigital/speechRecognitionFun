@@ -165,6 +165,12 @@ body {
       display: block;
       margin-bottom: 10px;
     }
+    .menu ul {
+        max-height: 0;
+        overflow: hidden;
+        transform: rotateX(90deg);
+        transition: all 0.5s;
+      }
 }
 
 @media (max-width: 700px) {
