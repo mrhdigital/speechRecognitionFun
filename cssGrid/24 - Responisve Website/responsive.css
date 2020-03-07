@@ -144,3 +144,10 @@ body {
     grid-gap: 20px;
     align-items: center;
   }  
+
+  .gallery h2:before, .gallery h2:after {
+    display: block;
+    content: '';
+    height: 10px;
+    background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
+  }
